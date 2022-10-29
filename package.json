@@ -1,0 +1,26 @@
+{
+  "name": "react-shop",
+  "version": "1.0.0",
+  "description": "Projecto de una eCommerce utilizando las siguientes tecnologias: html, css, javaScript y react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/londocg/react-shop.git"
+  },
+  "keywords": [
+    "react, javaScript, html, css"
+    ],
+  "author": "leonardo cabezas grajales",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/londocg/react-shop/issues"
+  },
+  "homepage": "https://github.com/londocg/react-shop#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
