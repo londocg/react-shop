@@ -2,12 +2,12 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractplugin = require('mini-css-extract-plugin');
 
-/** @type {import('webpack').Configuration} */
 module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
+        publicPath: '/'
     },
     mode: 'development',
 
@@ -51,8 +51,7 @@ module.exports = {
         }),
     ],
     devServer:{
-        static: path.join(__dirname, 'dist'),
-        compress: true,
-        port: 3005,
+        historyApiFallback: true,
+        
     }
 }
