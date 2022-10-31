@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/CreateAccount.scss';
+import '@styles/CreateAccount.scss';
 
-const CreateAccount = () => {
+function CreateAccount() {
     return (
         <div className="CreateAccount">
             <div className="CreateAccount-container">

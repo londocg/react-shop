@@ -1,9 +1,9 @@
 import React from 'react';
-import OrderItem from '../components/OrderItem';
-import Menu from '../components/Menu';
-import '../styles/Checkout.scss';
+import OrderItem from '@components/OrderItem';
+import Menu from '@components/Menu';
+import '@styles/Checkout.scss';
 
-const Checkout = () => {
+function Checkout() {
 	return (
 		<div className="Checkout">
 			<div className="Checkout-container">
