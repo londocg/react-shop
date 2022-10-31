@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Router, Route } from 'react-router-dom';
 import Layout from '../containers/Layout';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
@@ -17,7 +17,7 @@ const App = () => {
     return (
         <BrowserRouter>
             <Layout>
-                <Switch>
+                <Router>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/login" component={Login} />
                     <Route exact path="/password-recovery" component={PasswordRecovery} />
@@ -28,7 +28,7 @@ const App = () => {
                     <Route exact path="/checkout" component={Checkout} />
                     <Route exact path="/orders" component={Orders} />
                     <Route path="*" component={NotFound} />
-                </Switch>
+                </Router>
             </Layout>
         </BrowserRouter>
     );
