@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import '@styles/ProductItem.scss';
 import btn from '@icons/bt_add_to_cart.svg';
 
-
-
 function ProductItem({ product }) {
     const [count, setCount] = useState([]);
 
